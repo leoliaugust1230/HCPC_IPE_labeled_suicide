@@ -2,12 +2,11 @@
 
 ## Project Overview
 
-**INSIGHTFUL** is a research project focused on extracting and classifying suicidal phenotypes—such as suicidal ideation, suicide attempt, exposure to suicide, and non-suicidal self-injury (NSSI)—from unstructured psychiatric evaluation notes using state-of-the-art Reasoning Language Models (RLMs). The project introduces a high-quality, clinically annotated dataset of 500 inpatient psychiatric evaluation notes from a safety-net hospital in Harris County, Texas.
+**INSIGHTFUL** is a research project focused on extracting and classifying suicidal phenotypes, such as suicidal ideation, suicide attempt, exposure to suicide, and non-suicidal self-injury (NSSI)—from unstructured psychiatric evaluation notes. The project introduces a high-quality, clinically annotated dataset of 500 inpatient psychiatric evaluation notes from a safety-net hospital in Harris County, Texas.
 
 Our goal is to:
 - Create a publicly accessible, de-identified dataset with annotated suicidality labels.
-- Develop and evaluate multi-label classification methods using reasoning LLMs like GPT-4o, o3-mini, and o1.
-- Provide structured clinical justification to enhance interpretability and explainability in mental health AI applications.
+- Develop and evaluate multi-label classification methods.
 
 All labels and outputs are validated against a gold-standard annotated corpus with Cohen’s Kappa of 0.95, indicating near-perfect agreement.
 
