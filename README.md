@@ -24,8 +24,8 @@ All labels and outputs are validated against a gold-standard annotated corpus wi
 
 | Field Name            | Type     | Description                                                  |
 | --------------------- | -------- | ------------------------------------------------------------ |
-| **PatientID**         | String   | De-identified patient identifier (ClientGUID)                |
-| **VisitID**           | String   | Unique visit identifier (VisitGUID)                          |
+| **PatientID**         | Float    | De-identified patient identifier                             |
+| **VisitID**           | Float    | Unique visit identifier                                      |
 | **BirthYear**         | Integer  | Year of birth of the patient (BirthYearNum)                  |
 | **Age**               | Integer  | Patient’s age at time of admission (years)                   |
 | **Gender**            | String   | Patient gender code (GenderCode)                             |
@@ -38,6 +38,10 @@ All labels and outputs are validated against a gold-standard annotated corpus wi
 | **LoS**               | Integer  | Number of days between AdmitDtm and DischargeDtm (LoS)       |
 | **VisitType**         | String   | Type of visit, e.g. inpatient vs. outpatient (visit\_type)   |
 | **CareLevel**         | String   | Level of care setting (care\_level)                          |
+| **LegalIssue**        | Integer  | Legal/criminal justice stressor (1 = yes, 0 = no)|
+| **HousingInsecurity** | Integer  | Homeless or housing instability stressor (1 = yes, 0 = no)   |
+| **Unemployment**      | Integer  | unemployment or financial hardship stressor (1 = yes, 0 = no)|
+| **InadequateCareAccess**| Integer  | nadequate healthcare access stressor (1 = yes, 0 = no)     |
 | **Provider_ID**       | String   | Unique identifier for provider (Pro_ID)                      |
 | **DocumentName**      | String   | Clinical note section or document name (DisplayName)         |
 | **NoteText**          | Text     | Concatenated full text of all relevant sections (ValueText)  |
@@ -66,7 +70,11 @@ All labels and outputs are validated against a gold-standard annotated corpus wi
   "DischargeDateTime": "2018-03-17T14:20:00",
   "LoS": 5,
   "VisitType": "Inpatient",
-  "CareLevel": "Psychiatry",
+  "CareLevel": "Adult",
+  "LegalIssue": 1,
+  "HousingInsecurity": 1,
+  "Unemployment": 1,
+  "InadequateCareAccess": 1,
   "Provider_ID": "Pro-01",
   "DocumentName": "Initial Psychiatric Evaluation",
   "NoteText": "Patient reports increasing anxiety over the past month with occasional thoughts of self-harm. Denies any plan or intent to act. History of non-suicidal cutting 2 years ago.",
