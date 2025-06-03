@@ -90,7 +90,7 @@ All labels and outputs are validated against a gold-standard annotated corpus wi
 ## Access and Licensing
 This dataset is shared for academic and research use under a Data Use Agreement (DUA). Please contact the corresponding author for access.
 
-[Data Request Form]([url](https://forms.gle/588g5mDWP8kbeG1N9))
+[Data Request Form](https://forms.gle/588g5mDWP8kbeG1N9)
 
 License: UTHealth Houston License
 
